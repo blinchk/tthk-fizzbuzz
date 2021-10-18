@@ -9,4 +9,9 @@ public class FizzBuzzTests {
     public void shouldReturn0() {
         Assertions.assertEquals(FizzBuzz.of(0), ("0"));
     }
+
+    @Test
+    public void shouldReturn1() {
+        Assertions.assertEquals(FizzBuzz.of(1), ("1"));
+    }
 }
