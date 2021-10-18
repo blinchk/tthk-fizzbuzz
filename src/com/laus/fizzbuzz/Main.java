@@ -6,7 +6,7 @@ public class Main {
         FizzBuzz fizzBuzz = new FizzBuzz();
         fizzBuzz.fillNumbers();
         for (int number :
-             fizzBuzz.getNumbers()) {
+                fizzBuzz.getNumbers()) {
             System.out.println(FizzBuzz.of(number));
         }
     }
