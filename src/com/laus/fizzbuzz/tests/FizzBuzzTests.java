@@ -19,4 +19,9 @@ public class FizzBuzzTests {
     public void shouldReturnFizz() {
         Assertions.assertEquals(FizzBuzz.of(3), ("Fizz"));
     }
+
+    @Test
+    public void shouldReturnBuzz() {
+        Assertions.assertEquals(FizzBuzz.of(5), ("Buzz"));
+    }
 }
