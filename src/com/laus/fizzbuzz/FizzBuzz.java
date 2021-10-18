@@ -1,15 +1,29 @@
 package com.laus.fizzbuzz;
 
 public class FizzBuzz {
+    private int[] numbers;
+
     static final String FIZZ = "Fizz";
     static final String BUZZ = "Buzz";
 
-    public int[] getNumbers() {
-        int[] numbers = new int[100];
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = i + 1;
+    private int[] generateNumbers() {
+        int[] ints = new int[100];
+        for (int i = 0; i < ints.length; i++) {
+            ints[i] = i + 1;
         }
+        return ints;
+    }
+
+    public void fillNumbers() {
+        this.setNumbers(this.generateNumbers());
+    }
+
+    public int[] getNumbers() {
         return numbers;
+    }
+
+    public void setNumbers(int[] numbers) {
+        this.numbers = numbers;
     }
 
     public static String of(int i) {
